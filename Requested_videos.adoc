@@ -1,0 +1,48 @@
+Emender videos
+==============
+
+*Two types of users:*
+
+* _users_
+
+** run emend, test their books, usually do not write tests
+
+* _developers_
+
+** write tests, libraries, integration with Jenkins + the same as users
+
+
+*Topics for videos:*
+
+* _introduction_
+
+** what is Emender, why do we need it, what it can do for you, integration with Jenkins
+** how do the tests look like
+** demo
+
+* _basic installation_
+
+1. install all dependencies - git, lua
+2. clone the Emender repo
+3. install emender - make install
+4. clone the repo with libraries (if needed)
+5. install libs - make install
+6. obtain tests (for example clone the repo with tests) and install their dependencies (xmlstarlet, xmllint)
+7. test that this works - emend
+
+* _how to use it?_
+
+** command line interface - the emend command
+** emend options - verbose, color, summary
+** tests options - `--X<option>`
+** play with outputs (html, plain text)
+
+* _write your own tests_
+
+** specification of test (test/, name include Test*.lua, naming conventions for files, how to define metadata,
+** test methods: `setUp`, `tearDown`, test*
+** test functions: pass, fail, warn, ..?
+** helper functions :string.trim,
+** debug mode?
+
+* _continuous integration software, for example Jenkins (advanced)_
